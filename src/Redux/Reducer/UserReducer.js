@@ -3,16 +3,16 @@ const globalState = {
 };
 
 function UserReducer(state = globalState, { type, payload }) {
-  // switch (type) {
-  //   case 'SetData':
-  //     return {
-  //       ...state,
-  //       lsUser: payload.lsUser,
-  //     };
+  switch (type) {
+    case 'SetData':
+      return {
+        ...state,
+        lsUser: payload.lsUser,
+      };
 
-  //   default:
-  //     return state;
-  // }
+    default:
+      return state;
+  }
 }
 
 export default UserReducer;

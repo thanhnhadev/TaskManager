@@ -35,17 +35,17 @@ export function* LogoutCheck() {
 
 export function* DecryptCheck(params) {
   let result = null;
-  yield call(async () => {
-    result = await fetch('http://localhost:1880/User/Login', {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-      body: JSON.stringify(params.payload),
-    });
-    result = await result.json();
-    console.log('aaaa', result);
-  });
+  // yield call(async () => {
+  //   result = await fetch('http://localhost:1880/User/Login', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-type': 'application/json; charset=UTF-8',
+  //     },
+  //     body: JSON.stringify(params.payload),
+  //   });
+  //   result = await result.json();
+  //   console.log('aaaa', result);
+  // });
 
   if (result.length > 0) {
     yield put({ type: 'SetCurrentUser', payload: { user: result } });
