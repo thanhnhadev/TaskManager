@@ -3,16 +3,16 @@ const globalState = {
 };
 
 function TaskReducer(state = globalState, { type, payload }) {
-  switch (type) {
-    case 'SetDataTask':
-      return {
-        ...state,
-        lsTask: payload.lsTask,
-      };
+  // switch (type) {
+  //   case 'SetDataTask':
+  //     return {
+  //       ...state,
+  //       lsTask: payload.lsTask,
+  //     };
 
-    default:
-      return state;
-  }
+  //   default:
+  //     return state;
+  // }
 }
 
 export default TaskReducer;
