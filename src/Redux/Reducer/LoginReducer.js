@@ -1,7 +1,7 @@
 const loginState = {
   currentUser: '',
   isLogin: false,
-  // isLogout: false,
+  isLogout: false,
 };
 
 const LoginReducer = (state = loginState, { type, payload }) => {

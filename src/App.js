@@ -14,12 +14,12 @@ function App(props) {
     <div>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/main/*" element={<MainPage />}>
+        {/* <Route path="/main/*" element={<MainPage />}>
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="user" element={<User />} />
           <Route path="project" element={<Project />} />
           <Route path="task" element={<Task />} />
-        </Route>
+        </Route> */}
       </Routes>
     </div>
   );
